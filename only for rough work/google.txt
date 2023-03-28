@@ -1,0 +1,23 @@
+The world is coming out from the post covid who know that we face one more disaster that is russia ukkrain war,
+After happening this type of events in this globe the negative impact on agriculture and production ,flood and 
+weather get damages etc. So in order to get out from this itricacy the google providing the platfrom to soo case 
+there idea in order to see their idea as deterrence for other human beings and instil there mind set to some
+amount of belief that there is still some hope present in this world where human can live as we live forever.
+
+
+
+
+
+
+
+
+
+so i am going to creat an weather forecasting cubesat in order to give a positve impact on agriculture and 
+production. why cubesat because it have many potential application from earth and space observation to asset 
+tracking and telecommunication. Cubesat is low in cost and less time consuming in order to develop and 
+deploy as compare to other sattelite.
+So to build this type of device i used three to four embedded software and hardware device that is three 
+different sensors are used which are temperature & humidity sensor (DHT11), pressure sensor (BMP085) and 
+Accelerometer (ADXL-335) and also Ardunino.
+At last by this Google Developer Student Clubs 2023 Solution Challenge this will keep motivate and pussing 
+me to give one practical solution to the world
