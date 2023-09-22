@@ -82,13 +82,6 @@ int main()
 {
     int size;
     cin>>size;
-    char s[size];
-    char a[size];
-    char d[size];
-    TowerofHanoi(size,s[size],a[size],d[size]);
-    // string str;
-    // str = "ac";
-    // str = "a" + "c";
-    // cout<<str<<endl;
+    TowerofHanoi(size,'a','b','c');
     return 0;
 }

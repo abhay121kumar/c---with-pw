@@ -81,7 +81,7 @@ using namespace std;
 
 
 // My code mainly modification of dipanshu code
-/*
+
 string ReplacePi(string s,int start,int length)
 {
     string str = " ";
@@ -126,7 +126,7 @@ int main()
     cout<<ReplacePi(c,0,size)<<endl;
 }
 
-*/
+
 
 
 
@@ -142,44 +142,44 @@ int main()
 
 //***********************************************************************************************************************************//
 
-int order_shift(char one[],int start,int len){
+// int order_shift(char one[],int start,int len){
     
 
-    if(start == len){
-        return len;
-    }
+//     if(start == len){
+//         return len;
+//     }
     
-    one[len] = one[len-1];
-    order_shift(one, start, len-1);
-    return  len+1;
-}
+//     one[len] = one[len-1];
+//     order_shift(one, start, len-1);
+//     return  len+1;
+// }
 
-void replacePi(char one[]){
+// void replacePi(char one[]){
     
-    int len = strlen(one);
-    if(one[0]== '\0'){
-        return;
-    }
+//     int len = strlen(one);
+//     if(one[0]== '\0'){
+//         return;
+//     }
     
-    if(one[0] == 'p' && one[0+1] == 'i'){
-        len = order_shift(one,2,len);
-        one[len+1] = '\0';
-        len = order_shift(one,2,len);
-        one[len+1] = '\0';
+//     if(one[0] == 'p' && one[0+1] == 'i'){
+//         len = order_shift(one,2,len);
+//         one[len+1] = '\0';
+//         len = order_shift(one,2,len);
+//         one[len+1] = '\0';
         
-        one[0] = '3';
-        one[0+1] = '.';
-        one[0+2] = '1';
-        one[0+3] = '4';
-    }
+//         one[0] = '3';
+//         one[0+1] = '.';
+//         one[0+2] = '1';
+//         one[0+3] = '4';
+//     }
     
-    replacePi(one+1);
-}
+//     replacePi(one+1);
+// }
 
-int main() 
-{
-    char input[10000];
-    cin.getline(input, 10000);
-    replacePi(input);
-    cout << input << endl;
-}
+// int main() 
+// {
+//     char input[10000];
+//     cin.getline(input, 10000);
+//     replacePi(input);
+//     cout << input << endl;
+// }

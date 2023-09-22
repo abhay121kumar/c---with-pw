@@ -35,4 +35,68 @@ Correct Option:
 #include<cstring>
 using namespace std;
 
-// #include<cstring>
+
+// suraj method
+
+// int binarySearch(int arr[],int start,int end,int key)
+// {
+//     int mid;
+//     if(start<end)
+//     {
+//         mid = (start+end)/2;
+//         if(arr[mid]==key)
+//         {
+//             return mid;
+//         }
+//         if(arr[mid]<key)
+//         {
+//             return binarySearch(arr,mid+1,end,key);
+//         }
+//         else
+//         {
+//             return binarySearch(arr,start,mid-1,key);
+//         }
+//     }
+//     return -1;
+// }
+
+
+
+
+
+// my method only few statement change
+int binarySearch(int a[],int start,int end,int key)
+{
+    int mid;
+    mid = (start+end)/2;
+    if(start>end)
+    {
+        return -1;
+    }
+    if(a[mid]==key)
+    {
+        return mid;
+    }
+    if(a[mid]<key) 
+    {
+        return binarySearch(a,mid+1,end,key);
+    }
+    else
+    {
+        return binarySearch(a,start,mid-1,key);
+    }
+}
+int main()
+{
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    int key;
+    cin>>key;
+    cout<<"index: "<<binarySearch(arr,0,n-1,key)<<endl;
+    return 0;
+}
