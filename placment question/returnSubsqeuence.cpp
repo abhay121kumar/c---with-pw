@@ -1,37 +1,28 @@
 #include<iostream>
 using namespace std;
 #include<vector>
+#include<set>
 
-vector<string> solve(string name,int size){
-    vector<string> ans;
+set<string> solve(string name,int size){
+    set<string> obj;
     for(int i=0;i<size;i++){
         for(int j=size-1;j>=i;j--){
             string str = name.substr(i,j+1);
-            ans.push_back(str);
+            obj.insert(str);
         }
     }
-    return ans;
+    return obj;
 }
 
 int main(){
-    // string name;
-    // cin>>name;
-    // int size = name.length();
-    // cout<<size<<endl;
-    // vector<string> output = solve(name,size);
-    // for(int i=0;i<output.size();i++){
-    //     cout<<output[i]<<" "<<endl;
-    // }
-
-
-
-
-
-
-
-
-    string text;
-    cin>>text;
-    string ans = text.substr(0,1);
+    string name;
+    cin>>name;
+    int size = name.length();
+    cout<<size<<endl;
+    set<string> output = solve(name,size);
+    for(auto i:output){
+        cout<<i<<" ";
+    }
+    cout<<endl;
     return 0;
 }
