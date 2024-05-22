@@ -3,6 +3,7 @@ using namespace std;
 vector<string> AllPossibleStrings(string s) {
 	int n = s.length();
 	vector<string>ans;
+	//(1<<n)==2^n-1
 	for (int num = 0; num < (1 << n); num++) {
 		string sub = "";
 		for (int i = 0; i < n; i++) {
@@ -29,17 +30,7 @@ int main()
 	for (auto it : ans) {
 		cout << it << " ";
 	}
-    string temp="";
-    for(int i=0;i<ans.size();i++){
-        for(int j=i;j<ans.size();j++){
-            int n1 = temp.size();
-            int n2 = ans[i].size();
-            int maxi = max(n1,n2);
-            for(int i=0;i<maxi;i++){
-                if(temp)
-            }
-        }
-    }
+    
 }
 
 

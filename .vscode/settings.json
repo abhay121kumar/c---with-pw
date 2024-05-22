@@ -9,7 +9,8 @@
         "unordered_map": "cpp",
         "*.tcc": "cpp",
         "deque": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "ranges": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabled"
 }

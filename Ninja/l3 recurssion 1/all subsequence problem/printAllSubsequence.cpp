@@ -21,7 +21,7 @@ void printSub(string s,vector<char> v,int ind,int n){
     printSub(s,v,ind+1,n);
 }
 int main(){
-    string s= "abc";
+    string s= "aaa";
     vector<char> v;
     int n = 3;
     // cout<<"53"<<endl;
